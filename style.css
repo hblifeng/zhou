@@ -1,0 +1,235 @@
+body{
+	margin:0;
+	font-family: 'Roboto-Regular';
+	position: relative;
+}
+@font-face {
+      font-family: 'Roboto-Regular';
+      src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+      font-family: 'Playball-Regular';
+      src: url(../fonts/Playball-Regular.ttf) format('truetype');
+}
+body a{
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;			   
+}
+p{
+	margin:0;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+body a:hover{
+	text-decoration:none;
+}
+/*********banner*********/
+.banner{
+	min-height:700px;
+	background:url(images/banner.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	position:relative;
+	overflow:hidden;
+}
+.header{background-color:rgba(39, 39, 39, 0.87);}
+nav.navbar.navbar-default {
+  background:none;
+  border: none;
+  padding:1.7em 0;
+  margin: 0;
+  color:#fff;
+}
+#bs-example-navbar-collapse-1 a{
+	color:#fff;
+}
+#bs-example-navbar-collapse-1 a:hover{
+	color:#00a2a5;
+}
+.navbar-brand>img{margin-top:-15px;width:100%;}
+button.navbar-toggle{background:#00a2a5;border:#00a2a5;}
+button.navbar-toggle:hover{background:#00a2a5 !important;border:#00a2a5 !important;}
+.collapsed,button.collapsed:hover,button.navbar-toggle:focus{
+	background:#00a2a5 !important;
+	border:#00a2a5 !important;
+}
+.icon-bar{background:#fff !important;}
+ul.navbar-nav>li>a{
+	font-size:1.4em;
+	text-align: center;
+}
+a.active{
+	color:#00a2a5 !important;
+}
+.navbar-nav a::before{
+	content:".";
+	color:transparent;
+	position:absolute;
+	top:65%;
+	left:45%;
+	font-size:1.7em;
+}
+.navbar-nav a:hover::before,.navbar-nav a:focus::before,.navbar-nav a.active::before{
+	text-shadow:10px 0 #00a2a5 , -10px 0 #00a2a5;
+	color:#fff;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
+/*轮播*/
+.banner-title{
+	position: absolute;
+	right:11%;
+	width:23%;
+	text-align: center;
+	color:#fff;
+}
+.callback_containers{
+	background-color:rgba(84, 179, 174, 0.99);
+	padding:10em 2em 0;
+	min-height: 598px;
+	display:inline-block;
+	width:100%;
+}
+.callbacks{
+	list-style:none;
+	position:relative;
+}
+#callbacks>li{
+	position:absolute;
+	transition:opacity 500ms ease-in-out;
+	z-index:0;
+	opacity:0;
+	text-align:center;
+}
+#callbacks h3{
+	font-size:3em;
+	line-height:1.3em;
+}
+#callbacks p{
+	font-size:1.2em;
+	margin-top:2em;
+}
+#callbacks>li.callback_here{
+	z-index:10;
+	opacity:1;
+}
+.callback_tabs{
+	list-style:none;
+	position: absolute;
+	bottom:10%;
+	left:20%;
+	margin:0;
+	padding:0;
+	width:70%;
+	text-align:center;
+}
+.callback_tabs li{
+	display:inline-block;
+	margin:.5em .5em;
+	background-color:#fff;
+	width:20%;
+	height:.3em;
+	float:left;
+}
+.callback_tabs>li.callback_here{
+	background-color:#24CCEB;
+}
+/*max-991-768*/
+@media only screen and (min-width:769px) and (max-width:991px) {
+	.banner{
+		min-height:565px;
+	}
+	.navbar-header{
+		width:26%;
+	}
+	.navbar-brand{
+		width:100%;
+	}
+	.navbar-brand>img{
+		margin-top:-15px;
+	}
+	#bs-example-navbar-collapse-1 li a{
+		font-size:1.25em;
+	}
+	.banner-title{
+		width:27%;
+	}
+	.banner-title .callback_containers{
+		min-height: 473px;
+    padding: 5em 2em 0;
+	}
+	#callbacks h3{
+		font-size:2.3em;
+		line-height:1.5em;
+	}
+}
+@media only screen and (max-width:768px) {
+	.banner{
+		min-height:560px;
+	}
+	div.header{
+		padding:10px 0;
+	}
+	.navbar-brand{
+		width:26%;
+	}
+	nav.navbar.navbar-default {
+	  background:none;
+	  border: none;
+	  padding:0;
+	  margin: 0;
+	}
+	.navbar-nav a::before{
+		left:49%;
+		line-height:0.4em;
+	}
+	ul.navbar-right{
+		overflow-y:hidden;
+	}
+	.banner-title{
+		position:absolute;
+		left:0;
+		bottom:0;
+		height:30%;
+		width:100%;
+		overflow:hidden;
+	}
+	.banner-title .callback_containers{
+		height:100%;
+		padding:0 2em;
+		background-color:rgba(84, 179, 174, 0.99);
+	}
+	#info{
+		min-height:120px;
+	}
+	#callbacks h3{
+		font-size:2em;
+		line-height:1.8em;
+	}
+	#callbacks p{
+		font-size:1.25em;
+		margin-top:0;
+	}
+	.callback_tabs{
+		left:40%;
+		width:30%;
+		text-align:center;
+	}
+	.callback_tabs li{
+		display:inline-block;
+		background-color:#fff;
+		width:13%;
+		height:.2em;
+		float:left;
+	}
+}

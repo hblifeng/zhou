@@ -1,0 +1,132 @@
+#rtt{
+	cursor: pointer;
+	width:40px;
+	height:40px;
+	position:fixed; 
+	right:10px;
+	bottom:10px; 
+	border-radius:5px;
+	z-index: 3;
+    display:none;
+}
+
+#banner,#about{
+	margin-bottom: 3em;
+}
+.enter{
+	margin-top:3em;
+	width:100%;
+	padding:5em 0 0 8em;
+	background: url(http://www.vgames.cc/images/slid.jpg) no-repeat ;
+	background-size: cover;
+	
+}
+.item{
+	text-align: center;
+	border:none;
+}
+.thumbnail{
+	background: none;
+	
+}
+#font h1,#font h3,#font p{
+	color:white;
+}
+
+	.enter_right{
+		text-align:center;
+	}
+
+@media screen and (min-width: 768px)  {
+	.enter_right{
+		display: block;
+		border-left:3px solid white;
+		color:white;
+		margin-top:5em;
+		padding:2em 0;
+	}	
+}
+
+#gallery .clear{
+	position: inherit;
+}
+#display_h1{
+	display: inline-block;
+	margin: 1.5em 0;
+	color:rgb(0,162,165)
+}
+.shenkai {
+	height:900px;
+}
+.show a{
+	display: inline-block;
+	position: relative;
+}
+.shenkai a::after{
+		content:" ";
+   		border-bottom:50px solid rgb(245,245,245);
+   		border-left: 25px solid  transparent;
+   		border-right: 25px solid transparent;
+   		position: absolute;
+   		bottom:-50px;
+   		left:40%;
+}
+
+.lg_img{
+	position:absolute;
+	top:auto;
+	margin-top:2em;
+	padding:3em 0;
+	left:2%;
+	width:96%;
+	/*height:400px;*/
+	background: rgb(245,245,245);
+	overflow: hidden;
+	animation:heightChange 0.3s linear ;
+}
+@keyframes heightChange{
+	from{
+		height: 0px;
+	}
+	to{
+		height: 600px;
+	}
+}
+
+
+.lg_img span{
+	position: absolute;
+	top:-0.3em;
+	right:0.2em;
+	color:gainsboro;
+	font-size:5em;
+	cursor: pointer;
+}
+.lg_img h1{
+	color:rgb(0,162,165);
+	margin-bottom: 1em;
+}
+.lg_img .left{
+	/*width:30%;*/
+	min-width: 300px;
+	width:30%;
+	text-align: center;
+	margin-right: 10%;
+}
+
+.lg_img .left img{
+	max-width:300px;
+	max-height:300px;
+}
+.lg_img .left ,.lg_img .right{
+	float:left;
+	overflow: hidden;
+}
+.lg_img .right{
+	width:50%;
+	margin-top:1em;
+	height: auto;
+}
+
+
+
